@@ -1,0 +1,43 @@
+.main-container {
+    display: grid;
+    grid-template: 1fr / 45px 150px 45px 1fr 45px 150px 45px;
+
+    min-height: 116px;
+    margin: 0 auto;
+
+    background-color: rgb(226, 224, 224);
+}
+
+.inner-container {
+    margin: 28px 0;
+}
+
+.image {
+    grid-column: 2;
+
+    /* Hago esto para que la imagen cubra la casilla, y no se salga del espacio*/
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.links-container {
+    grid-column: 4;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: 204px;
+    margin-right: 204px;
+    background-color: #ffbdbd;
+}
+
+.link {
+    margin: 20px auto;
+}
+
+.inner-button {
+    grid-column: 6;
+
+    background-color: rgb(189, 43, 226);
+}
